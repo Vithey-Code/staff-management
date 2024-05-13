@@ -1,4 +1,4 @@
-# Basic Staff Managemenbt
+# Basic Staff Management
 
 This is a simple basic feature of the Staff Management System for testing purposes.
 
