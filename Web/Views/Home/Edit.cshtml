@@ -1,0 +1,86 @@
+@{
+    ViewData["Title"] = "Edit Staff";
+}
+<h1>@ViewData["Title"]</h1>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<form id="editStaffForm">
+    <div class="form-group" hidden="hidden">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="Id" required class="form-control" />
+    </div>
+    <p></p>
+    <div class="form-group">
+        <label for="staffId">Staff ID:</label>
+        <input type="text" id="staffId" name="StaffId" required class="form-control"/>
+    </div>
+    <p></p>
+    <div class="form-group">
+        <label for="fullName">Full name:</label>
+        <input type="text" id="fullName" name="Fullname" required class="form-control"/>
+    </div>
+    <p></p>
+    <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="Gender" required class="form-control">
+            <option value="">Select Gender</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+        </select>
+    </div>
+    <p></p>
+    <div class="form-group">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="Birthday" required class="form-control"/>
+    </div>
+</form>
+<p></p>
+<div class="form-group">
+    <button id="btnUpdateStaff" class="btn btn-primary">Update</button>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var staffData = sessionStorage.getItem('staff');
+        var staff = JSON.parse(staffData);
+        
+        if (staff !== null) {
+            $('#id').val(staff.id);
+            $('#staffId').val(staff.staffId);
+            $('#fullName').val(staff.fullName);
+            $('#gender').val(staff.gender);
+            $('#birthday').val(staff.birthday);
+        }
+        
+        
+        $("#btnUpdateStaff").click(function(e) {
+            console.log("sd");
+            var request = {
+                id: $("#id").val(),
+                staffId: $("#staffId").val(),
+                fullname: $("#fullName").val(),
+                gender: parseInt($("#gender").val()),
+                birthday: $("#birthday").val()
+            };
+            
+            console.log("data: ", JSON.stringify(staff))
+    
+            $.ajax({
+                url: 'https://localhost:5000/api/v1/staff/'+staff.id,
+                type: 'PUT',
+                contentType: 'application/json',
+                data: JSON.stringify(request),
+                success: function(data, textStatus, xhr)
+                {
+                    alert("Staff updated successfully!");
+                    window.location.href = '@Url.Action("Index", "Home")';
+                },
+                error: function(xhr, textStatus, errorThrown)
+                {
+                    console.log("Error: " + errorThrown);
+                }
+            });
+        });
+    });
+</script>

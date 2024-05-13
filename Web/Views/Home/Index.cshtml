@@ -1,0 +1,146 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="text-center">
+        <h1 class="display-4">Staff Management</h1>
+    </div>
+    <br/>
+
+    <div class="row">
+        <div class="col-md-3">
+            <input type="text" id="search_staffId" placeholder="Search by staff Id" class="form-control">
+        </div>
+        <div class="col-md-3">
+            <select id="search_gender" class="form-control">
+                <option value="">Select Gender</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <input type="date" id="search_fromDate" class="form-control">
+        </div>
+        <div class="col-md-3">
+            <input type="date" id="search_toDate" class="form-control">
+        </div>
+
+        <div class="col-md-6 text-right mt-2">
+            <button id="addNew" class="btn btn-info" asp-controller="Home" asp-action="Add">Add New Staff</button>
+            <button id="exportPdf" class="btn btn-primary">Export to PDF</button>
+            <button id="exportExcel" class="btn btn-success">Export to Excel</button>
+        </div>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Staff ID</th>
+            <th>Full Name</th>
+            <th>Gender</th>
+            <th>Birthday</th>
+        </tr>
+        </thead>
+        <tbody id="staffData">
+
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+    function LoadData(staffId, gender, fromDate, toDate) {
+        staffId = staffId == null ? "" : staffId;
+        gender = gender == null ? "" : gender;
+        fromDate = fromDate == null ? "" : fromDate;
+        toDate = toDate == null ? "" : toDate;
+            $.ajax({
+                url: 'https://localhost:5000/api/v1/staff?pageNumber=1&pageSize=100&staffid='+staffId+'&gender='+gender+'&fromDate='+fromDate+'&toDate='+toDate+'',
+                method: 'GET',
+                success: function (data) {
+                    console.log("url: ", this.url)
+                    console.log("data: ", data.data)
+                    var staffData = '';
+                    $.each(data.data, function (key, staff) {
+                        staffData +=
+                            `<tr>
+                                <td>${staff.id}</td>
+                                <td>${staff.staffId}</td>
+                                <td>${staff.fullName}</td>
+                                <td>${staff.gender == 1 ? "Male" : "Female"}</td>
+                                <td>${staff.birthday}</td>
+                                <td><button class="editBtn" data-staff='${JSON.stringify(staff)}'>Edit</button> 
+                                <button class="deleteBtn" data-staff='${JSON.stringify(staff)}'>Delete</button></td>
+                            </tr>`;
+                    });
+                    $('#staffData').empty().append(staffData);
+                }
+            });
+    }
+    
+    function exportPdf(){
+        var staffId = $("#search_staffId").val();
+        var gender = $("#search_gender").val();
+        var fromDate = $("#search_fromDate").val();
+        var toDate = $("#search_toDate").val();
+        window.location.href = 'https://localhost:5000/api/v1/staff/export-to-pdf?staffId=' + staffId + '&gender=' + gender + '&fromDate=' + fromDate + '&toDate=' + toDate;
+    }
+
+    function exportExcel(){
+        var staffId = $("#search_staffId").val();
+        var gender = $("#search_gender").val();
+        var fromDate = $("#search_fromDate").val();
+        var toDate = $("#search_toDate").val();
+        window.location.href = 'https://localhost:5000/api/v1/staff/export-to-excel?staffId=' + staffId + '&gender=' + gender + '&fromDate=' + fromDate + '&toDate=' + toDate;
+    }
+    
+    function addNewStaff(){
+        window.location.href = '@Url.Action("Add", "Home")';
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        LoadData();
+        $('#exportPdf').on('click', exportPdf);
+        $('#exportExcel').on('click', exportExcel);
+        $('#addNew').on('click', addNewStaff);
+        
+        $('#staffData').on('click', '.editBtn', function(){
+            var staffData = $(this).attr('data-staff');
+            sessionStorage.clear();
+            sessionStorage.setItem('staff', staffData);
+            var staff = JSON.parse(staffData);
+            window.location.href = '@Url.Action("Edit", "Home")' + '?id=' + staff.id;
+        });
+        
+        $('#staffData').on('click', '.deleteBtn', function() {
+            var staffData = $(this).attr('data-staff');
+            var staff = JSON.parse(staffData);
+            $.ajax({
+                url: 'https://localhost:5000/api/v1/staff/'+staff.id,
+                type: 'DELETE',
+                contentType: 'application/json',
+                data: JSON.stringify(staff),
+                success: function(data, textStatus, xhr)
+                {
+                    alert("Staff updated successfully!");
+                     LoadData();
+                },
+                error: function(xhr, textStatus, errorThrown)
+                {
+                    console.log("Error: " + errorThrown);
+                }
+            });
+        });
+    });
+    
+    $('#search_staffId,#search_gender, #search_fromDate, #search_toDate').on('change keyup', function() {
+        var staffId = $("#search_staffId").val();
+        var gender = $("#search_gender").val();
+        var fromDate = $("#search_fromDate").val();
+        var toDate = $("#search_toDate").val();
+        LoadData(staffId, gender, fromDate, toDate);
+    });
+    </script>
+}

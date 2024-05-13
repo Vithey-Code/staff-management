@@ -1,0 +1,29 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0ca0d07a_002D4c65_002D4f21_002Db137_002D3699dd1adff6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AddStaffAsync_WhenValidRequest_ReturnsSuccessResult" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::5D991E4D-4D2E-4A30-A5F9-A16A71F836CF::net8.0::API.Test.Unit.StaffServiceTests.AddStaffAsync_WhenValidRequest_ReturnsSuccessResult&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=30839458_002D8738_002D48e0_002D958f_002Db0b190ef4309/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from StaffServiceTest.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::5D991E4D-4D2E-4A30-A5F9-A16A71F836CF::net8.0::API.Test.Unit.StaffServiceTests.AddStaffAsync_WhenValidRequest_ReturnsSuccessResult&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6469378e_002D9069_002D415a_002Da745_002D245e5305ea63/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AddStaffAsync_ReturnSuccess_WhenStaffDoesNotExistAndValidAddRequests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::E400DA5F-F0FB-46EF-B652-9CDFC0A9A674::net8.0::API.Test.Unit.StaffServiceTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::43B4F83C-7129-4C08-BF68-07516B54954F::net8.0::API.Test.Integration.StaffControllerTests.AddStaffAsync_ReturnsOk_WhenStaffAddedSuccessfully&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::43B4F83C-7129-4C08-BF68-07516B54954F::net8.0::API.Test.Integration.StaffControllerTests.EditStaffAsync_ReturnsOk_WhenStaffEditedSuccessfully&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::43B4F83C-7129-4C08-BF68-07516B54954F::net8.0::API.Test.Integration.StaffControllerTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b46cb66b_002D0d40_002D4f6a_002D834e_002D7b176b2b4652/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AddStaffAsync_WhenValidRequest_ReturnsSuccessResult #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::5D991E4D-4D2E-4A30-A5F9-A16A71F836CF::net8.0::API.Test.Unit.StaffServiceTests.AddStaffAsync_ValidRequest_ReturnsSuccess&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c64d37e5_002Dd067_002D4e9b_002Db843_002D1d405c85e083/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AddStaffAsync_ValidRequest_ReturnsSuccess" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::E400DA5F-F0FB-46EF-B652-9CDFC0A9A674::net8.0::API.Test.Unit.StaffServiceTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
