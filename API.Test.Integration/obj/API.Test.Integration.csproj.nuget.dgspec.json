@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API.Test.Integration/API.Test.Integration.csproj": {}
+    "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API.Test.Integration/API.Test.Integration.csproj": {}
   },
   "projects": {
-    "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API.Test.Integration/API.Test.Integration.csproj": {
+    "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API.Test.Integration/API.Test.Integration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API.Test.Integration/API.Test.Integration.csproj",
+        "projectUniqueName": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API.Test.Integration/API.Test.Integration.csproj",
         "projectName": "API.Test.Integration",
-        "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API.Test.Integration/API.Test.Integration.csproj",
+        "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API.Test.Integration/API.Test.Integration.csproj",
         "packagesPath": "/Users/rathavithey/.nuget/packages/",
-        "outputPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API.Test.Integration/obj/",
+        "outputPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API.Test.Integration/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rathavithey/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API/API.csproj": {
-                "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API/API.csproj"
+              "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API/API.csproj": {
+                "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API/API.csproj"
               }
             }
           }
@@ -103,14 +103,14 @@
         }
       }
     },
-    "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API/API.csproj": {
+    "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API/API.csproj",
+        "projectUniqueName": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API/API.csproj",
+        "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API/API.csproj",
         "packagesPath": "/Users/rathavithey/.nuget/packages/",
-        "outputPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API/obj/",
+        "outputPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rathavithey/.nuget/NuGet/NuGet.Config"

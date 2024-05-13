@@ -9436,11 +9436,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API.Test.Unit/API.Test.Unit.csproj",
+      "projectUniqueName": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API.Test.Unit/API.Test.Unit.csproj",
       "projectName": "API.Test.Unit",
-      "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API.Test.Unit/API.Test.Unit.csproj",
+      "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API.Test.Unit/API.Test.Unit.csproj",
       "packagesPath": "/Users/rathavithey/.nuget/packages/",
-      "outputPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API.Test.Unit/obj/",
+      "outputPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API.Test.Unit/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/rathavithey/.nuget/NuGet/NuGet.Config"
@@ -9455,8 +9455,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API/API.csproj": {
-              "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API/API.csproj"
+            "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API/API.csproj": {
+              "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API/API.csproj"
             }
           }
         }

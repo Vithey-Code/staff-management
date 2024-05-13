@@ -3838,11 +3838,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/Web/Web.csproj",
+      "projectUniqueName": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/Web/Web.csproj",
       "projectName": "Web",
-      "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/Web/Web.csproj",
+      "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/Web/Web.csproj",
       "packagesPath": "/Users/rathavithey/.nuget/packages/",
-      "outputPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/Web/obj/",
+      "outputPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/rathavithey/.nuget/NuGet/NuGet.Config"
@@ -3857,8 +3857,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API/API.csproj": {
-              "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/API/API.csproj"
+            "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API/API.csproj": {
+              "projectPath": "/Users/rathavithey/Documents/Document/COMMINUNITY/StaffManagement/staff-management/API/API.csproj"
             }
           }
         }

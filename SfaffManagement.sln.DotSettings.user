@@ -9,7 +9,7 @@
     &lt;TestId&gt;NUnit3x::5D991E4D-4D2E-4A30-A5F9-A16A71F836CF::net8.0::API.Test.Unit.StaffServiceTests.AddStaffAsync_WhenValidRequest_ReturnsSuccessResult&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6469378e_002D9069_002D415a_002Da745_002D245e5305ea63/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AddStaffAsync_ReturnSuccess_WhenStaffDoesNotExistAndValidAddRequests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6469378e_002D9069_002D415a_002Da745_002D245e5305ea63/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AddStaffAsync_ReturnSuccess_WhenStaffDoesNotExistAndValidAddRequests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::E400DA5F-F0FB-46EF-B652-9CDFC0A9A674::net8.0::API.Test.Unit.StaffServiceTests&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::43B4F83C-7129-4C08-BF68-07516B54954F::net8.0::API.Test.Integration.StaffControllerTests.AddStaffAsync_ReturnsOk_WhenStaffAddedSuccessfully&lt;/TestId&gt;
@@ -22,8 +22,9 @@
     &lt;TestId&gt;NUnit3x::5D991E4D-4D2E-4A30-A5F9-A16A71F836CF::net8.0::API.Test.Unit.StaffServiceTests.AddStaffAsync_ValidRequest_ReturnsSuccess&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c64d37e5_002Dd067_002D4e9b_002Db843_002D1d405c85e083/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AddStaffAsync_ValidRequest_ReturnsSuccess" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c64d37e5_002Dd067_002D4e9b_002Db843_002D1d405c85e083/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AddStaffAsync_ValidRequest_ReturnsSuccess" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::E400DA5F-F0FB-46EF-B652-9CDFC0A9A674::net8.0::API.Test.Unit.StaffServiceTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::43B4F83C-7129-4C08-BF68-07516B54954F::net8.0::API.Test.Integration.StaffControllerTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
